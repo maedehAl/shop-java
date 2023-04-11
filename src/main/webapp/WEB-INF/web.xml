@@ -1,0 +1,33 @@
+<!DOCTYPE web-app PUBLIC
+        "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+        "http://java.sun.com/dtd/web-app_2_3.dtd" >
+<web-app>
+
+    <display-name>Archetype Created Web Application</display-name>
+    <servlet>
+        <servlet-name>shopServlet</servlet-name>
+        <servlet-class>org.example.ShopServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>shopServlet</servlet-name>
+        <url-pattern>/products</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>sampleController</servlet-name>
+        <servlet-class>org.example.controller.SampleController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>sampleController</servlet-name>
+        <url-pattern>/sample</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ProductController</servlet-name>
+        <servlet-class>org.example.controller.ProductController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ProductController</servlet-name>
+        <url-pattern>/v2/product</url-pattern>
+    </servlet-mapping>
+</web-app>
